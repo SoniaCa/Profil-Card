@@ -1,3 +1,27 @@
+<?php
+// http://localhost/Perso/Profil-Card/card.php?name=Sonia&last_name=Carmon&age=15&ville=Rouen&email=mouou%40mail.fr&linkedin=SoniaCa&twitter=KazuPkt&dip1=Master&dip1=Licence&dip1=Dev&skill1=HTML&skill1=CSS&skill1=PHP&color=&pdp=
+
+$reponse_form=$_GET;
+var_dump($reponse_form);
+
+// /var/www/html/Perso/Profil-Card/card.php:5:
+// array (size=11)
+//   'name' => string 'Sonia' (length=5)
+//   'last_name' => string 'Carmon' (length=6)
+//   'age' => string '15' (length=2)
+//   'ville' => string 'Rouen' (length=5)
+//   'email' => string 'mouou@mail.fr' (length=13)
+//   'linkedin' => string 'SoniaCa' (length=7)
+//   'twitter' => string 'KazuPkt' (length=7)
+//   'dip1' => string 'Dev' (length=3)
+//   'skill1' => string 'PHP' (length=3)
+//   'color' => string '' (length=0)
+//   'pdp' => string '' (length=0)
+
+?>
+
+
+
 <!DOCTYPE html>
 
 <head>
@@ -15,16 +39,16 @@
 </head>
 
 <body>
-<div class="wrapper">
+<div class="wrapper <?= $reponse_form['color'] ?? NULL ?>">
 
-    <div class="card">
+    <div class="card <?= $reponse_form['color'] ?? NULL ?>">
         <header class="img-name">
             <div class="image"><img class="photo" src="./images/Sonia.jpeg" alt="Sonia"></div>
-            <p class="name"><span class="princ">Sonia Carmon</span> <span class="age">25</span>, <em>Rouen</em> </p>
-            <p><em>carmon.sonia@gmail.com</em> </p>
+            <p class="name"><span class="princ"><?= $reponse_form['name'] ?? NULL ?> <?= $reponse_form['last_name'] ?? NULL ?></span> <span class="age"><?= $reponse_form['age'] ?? NULL ?></span>, <em><?= $reponse_form['ville'] ?? NULL ?></em> </p>
+            <p><em><?= $reponse_form['email'] ?? NULL ?></em> </p>
             <p>
-                <a href="https://www.linkedin.com/in/sonia-carmon-027056173/" target = "_blank"><img class="logos" src="./images/linkedin.png" alt="linkedin"></a>
-                <a href="https://twitter.com/KazuPkt" target = "_blank"><img class="logos" src="./images/Twitter.svg" alt="twitter"></a>
+                <!-- <a href="https://www.linkedin.com/in/sonia-carmon-027056173/" target = "_blank"><img class="logos" src="./images/linkedin.png" alt="linkedin"></a> -->
+                <a href="https://twitter.com/<?= $reponse_form['twitter'] ?? NULL ?>" target = "_blank"><img class="logos" src="./images/Twitter.svg" alt="twitter"></a>
             </p>
         </header>
 
@@ -56,20 +80,20 @@
             </div>   
 
             <div class="l2">
-                <em>Développeur Web (O'clock)</em>
-                <em>HTML: blahblahblah</em>
+                <em><?= $reponse_form['dip1'] ?? NULL ?></em>
+                <em><?= $reponse_form['skill1'] ?? NULL ?></em>
             </div>
             
             
             <div class="l3">
-                <em>Master Gestion de l'Environnement</em>
-                <em>CSS: blahblahblah</em>
+                <em><?= $reponse_form['dip2'] ?? NULL ?></em>
+                <em><?= $reponse_form['skill2'] ?? NULL ?></em>
             </div>  
 
 
             <div class="l4">
-                <em>Licence Ecologie Biologie des Organismes</em>
-                <em>PHP: blahblahblah</em>
+                <em><?= $reponse_form['dip3'] ?? NULL ?></em>
+                <em><?= $reponse_form['skill3'] ?? NULL ?></em>
             </div>  
                 
         </main>

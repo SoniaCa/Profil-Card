@@ -6,12 +6,32 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url("../images/bg-pattern-top.png"),url("../images/bg-pattern-bottom.png");
+    background-image: url("../images/color/bg-pattern-top-rose.png"),url("../images/color/bg-pattern-bottom-rose.png");
     background-repeat: no-repeat;
     background-size: 500px;
     background-position: top -250px left -250px, bottom -250px right -250px ;
     font-family: 'Kumbh Sans', sans-serif;
 }    
+
+.wrapper.rose{
+    background-color: hsl(357, 66%, 34%);
+    background-image: url("../images/color/bg-pattern-top-rose.png"),url("../images/color/bg-pattern-bottom-rose.png");
+}    
+
+.wrapper.vert{
+    background-color: hsl(110, 50%, 45%);
+    background-image: url("../images/color/bg-pattern-top-vert.png"),url("../images/color/bg-pattern-bottom-vert.png");
+}   
+
+.wrapper.bleu{
+    background-color: hsl(194, 79%, 41%);
+    background-image: url("../images/color/bg-pattern-top-bleu.png"),url("../images/color/bg-pattern-bottom-bleu.png");
+}   
+
+.wrapper.jaune{
+    background-color: hsl(41, 88%, 60%);
+    background-image: url("../images/color/bg-pattern-top-jaune.png"),url("../images/color/bg-pattern-bottom-jaune.png");
+}   
 
 .card{
     width: 330px;
@@ -20,8 +40,24 @@
     margin: auto auto;
     border-radius: 15px;
     padding: 60px 0 10px 0;
-    background-image: url("../images/bg-pattern-card.jpg");
+    background-image: url("../images/color/bg-pattern-card-rose.jpg");
     background-repeat: no-repeat;
+}
+
+.card.rose {
+    background-image: url("../images/color/bg-pattern-card-rose.jpg");
+}
+
+.card.vert{
+    background-image: url("../images/color/bg-pattern-card-vert.jpg");
+}
+
+.card.bleu {
+    background-image: url("../images/color/bg-pattern-card-bleu.png");
+}
+
+.card.jaune {
+    background-image: url("../images/color/bg-pattern-card-jaune.jpg");
 }
 
 .img-name {
@@ -115,9 +151,6 @@ main em::before {
 
 
 
-
-
-
 em {
     color: hsl(0, 0%, 59%);
     font-size: 0.7rem;
@@ -136,6 +169,8 @@ footer {
     font-size: 0.8rem;
 }
 
+
+
 @media (min-width : 700px) {
     .wrapper {
         background-color: hsl(357, 66%, 34%);
@@ -145,12 +180,32 @@ footer {
         display: flex;
         align-items: center;
         flex-direction: column;
-        background-image: url("../images/bg-pattern-top.png"),url("../images/bg-pattern-bottom.png");
+        background-image: url("../images/color/bg-pattern-top-rose.png"),url("../images/color/bg-pattern-bottom-rose.png");
         background-repeat: no-repeat;
         background-size: 700px;
         background-position: top -350px left -350px, bottom -350px right -350px ;
         font-family: 'Kumbh Sans', sans-serif;
     }    
+
+    .wrapper.rose{
+        background-color: hsl(357, 66%, 34%);
+        background-image: url("../images/color/bg-pattern-top-rose.png"),url("../images/color/bg-pattern-bottom-rose.png");
+    }    
+    
+    .wrapper.vert{
+        background-color: hsl(110, 50%, 45%);
+        background-image: url("../images/color/bg-pattern-top-vert.png"),url("../images/color/bg-pattern-bottom-vert.png");
+    }   
+    
+    .wrapper.bleu{
+        background-color: hsl(194, 79%, 41%);
+        background-image: url("../images/color/bg-pattern-top-bleu.png"),url("../images/color/bg-pattern-bottom-bleu.png");
+    }   
+    
+    .wrapper.jaune{
+        background-color: hsl(41, 88%, 60%);
+        background-image: url("../images/color/bg-pattern-top-jaune.png"),url("../images/color/bg-pattern-bottom-jaune.png");
+    } 
 } 
 
 @media (min-width : 1000px) {
@@ -162,12 +217,32 @@ footer {
         display: flex;
         align-items: center;
         flex-direction: column;
-        background-image: url("../images/bg-pattern-top.png"),url("../images/bg-pattern-bottom.png");
+        background-image: url("../images/color/bg-pattern-top-rose.png"),url("../images/color/bg-pattern-bottom-rose.png");
         background-repeat: no-repeat;
         background-size: 1000px;
         background-position: top -500px left -500px, bottom -500px right -500px ;
         font-family: 'Kumbh Sans', sans-serif;
+    }   
+    
+    .wrapper.rose{
+        background-color: hsl(357, 66%, 34%);
+        background-image: url("../images/color/bg-pattern-top-rose.png"),url("../images/color/bg-pattern-bottom-rose.png");
     }    
+    
+    .wrapper.vert{
+        background-color: hsl(110, 50%, 45%);
+        background-image: url("../images/color/bg-pattern-top-vert.png"),url("../images/color/bg-pattern-bottom-vert.png");
+    }   
+    
+    .wrapper.bleu{
+        background-color: hsl(194, 79%, 41%);
+        background-image: url("../images/color/bg-pattern-top-bleu.png"),url("../images/color/bg-pattern-bottom-bleu.png");
+    }   
+    
+    .wrapper.jaune{
+        background-color: hsl(41, 88%, 60%);
+        background-image: url("../images/color/bg-pattern-top-jaune.png"),url("../images/color/bg-pattern-bottom-jaune.png");
+    } 
 } 
 
 @media (min-width : 1400px) {
@@ -179,10 +254,30 @@ footer {
         display: flex;
         align-items: center;
         flex-direction: column;
-        background-image: url("../images/bg-pattern-top.png"),url("../images/bg-pattern-bottom.png");
+        background-image: url("../images/color/bg-pattern-top-rose.png"),url("../images/color/bg-pattern-bottom-rose.png");
         background-repeat: no-repeat;
         background-size: 1400px;
         background-position: top -700px left -700px, bottom -700px right -700px ;
         font-family: 'Kumbh Sans', sans-serif;
+    }   
+    
+    .wrapper.rose{
+        background-color: hsl(357, 66%, 34%);
+        background-image: url("../images/color/bg-pattern-top-rose.png"),url("../images/color/bg-pattern-bottom-rose.png");
     }    
+    
+    .wrapper.vert{
+        background-color: hsl(110, 50%, 45%);
+        background-image: url("../images/color/bg-pattern-top-vert.png"),url("../images/color/bg-pattern-bottom-vert.png");
+    }   
+    
+    .wrapper.bleu{
+        background-color: hsl(194, 79%, 41%);
+        background-image: url("../images/color/bg-pattern-top-bleu.png"),url("../images/color/bg-pattern-bottom-bleu.png");
+    }   
+    
+    .wrapper.jaune{
+        background-color: hsl(41, 88%, 60%);
+        background-image: url("../images/color/bg-pattern-top-jaune.png"),url("../images/color/bg-pattern-bottom-jaune.png");
+    } 
 } 
