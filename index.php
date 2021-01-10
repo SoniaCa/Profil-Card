@@ -43,11 +43,11 @@
             </div>
 
             <div class="reseaux">
-                <h2 class="titres">Twitter</h2>
-                <!-- <label for="linkedin">Pseudo LinkedIn</label>
-                <input type="text" name="linkedin" id="linkedin"> -->
+                <h2 class="titres">Réseaux</h2>
+                <label for="linkedin">Votre URL LinkedIn</label>
+                <input type="text" name="linkedin" id="linkedin" value= "<?= $_GET['linkedin'] ?? NULL ?>">
             
-                <label for="twitter">Pseudo Twitter</label>
+                <label for="twitter">Votre URL Twitter</label>
                 <input type="text" name="twitter" id="twitter" value= "<?= $_GET['twitter'] ?? NULL ?>" >
             </div>
 
