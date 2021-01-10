@@ -94,10 +94,14 @@ var_dump($reponse_form);
                 <div class="l2">
                     <?php if (isset($reponse_form['dip1'])): ?>
                         <em><?= $reponse_form['dip1']?></em>
+                    <?php else: ?>
+                        <p></p>
                     <?php endif; ?>
 
                     <?php if (isset($reponse_form['skill1'])): ?>
                         <em><?= $reponse_form['skill1']?></em>
+                    <?php else: ?>
+                        <p></p>
                     <?php endif; ?>
                 </div>
                 
@@ -105,9 +109,13 @@ var_dump($reponse_form);
                 <div class="l3">
                     <?php if (isset($reponse_form['dip2'])): ?>
                         <em><?= $reponse_form['dip2']?></em>
+                    <?php else: ?>
+                    <p></p>    
                     <?php endif; ?>
                     <?php if (isset($reponse_form['skill2'])): ?>
                             <em><?= $reponse_form['skill2']?></em>
+                    <?php else: ?>
+                        <p></p>
                     <?php endif; ?>
                 </div>  
 
@@ -115,9 +123,13 @@ var_dump($reponse_form);
                 <div class="l4">
                     <?php if (isset($reponse_form['dip3'])): ?>
                         <em><?= $reponse_form['dip3']?></em>
+                    <?php else: ?>
+                        <p></p>
                     <?php endif; ?>
                     <?php if (isset($reponse_form['skill3'])): ?>
                         <em><?= $reponse_form['skill3']?></em>
+                    <?php else: ?>
+                        <p></p>
                     <?php endif; ?>
                 </div>  
 

@@ -120,7 +120,7 @@ li::before {
 .l3,
 .l4 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between
 }
 
 
@@ -136,7 +136,6 @@ div h1 {
 
 div em {
     width: calc( 100% / 2);
-    margin-right: 5px;
 }
 
 main {
