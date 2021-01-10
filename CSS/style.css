@@ -120,8 +120,13 @@ li::before {
 .l3,
 .l4 {
     display: flex;
-    margin: 0px 20px 0px 20px;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+
+.listes {
+    width: 100%;
+    text-align: center;
 }
 
 div h1 {
@@ -134,10 +139,19 @@ div em {
     margin-right: 5px;
 }
 
+main {
+    width: 330px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 main .princ{
     font-size: 1.1rem;
-    
+    margin-bottom: 5px;
 }
 
 main em::before {

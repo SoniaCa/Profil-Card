@@ -22,24 +22,24 @@
 
         <p class="svp"> Veuillez remplir le formulaire ci-dessous</p>
 
-        <form action="card.php" method="$_GET">
+        <form action="card.php" method='get'>
 
             <div class="info">
                 <h2 class="titres">Informations personelles</h2>
                 <label for="name">Prénom</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" value= "<?= $_GET['name'] ?? NULL ?>" >
             
                 <label for="last_name">Nom</label>
-                <input type="text" name="last_name" id="last_name">
+                <input type="text" name="last_name" id="last_name" value= "<?= $_GET['last_name'] ?? NULL ?>" >
             
                 <label for="age">Age</label>
-                <input type="number" name="age" id="age">
+                <input type="number" name="age" id="age" value= "<?= $_GET['age'] ?? NULL ?>" >
             
                 <label for="ville">Ville</label>
-                <input type="text" name="ville" id="ville">
+                <input type="text" name="ville" id="ville" value= "<?= $_GET['ville'] ?? NULL ?>" >
 
                 <label for="email">Adresse Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" value= "<?= $_GET['email'] ?? NULL ?>" >
             </div>
 
             <div class="reseaux">
@@ -48,31 +48,32 @@
                 <input type="text" name="linkedin" id="linkedin"> -->
             
                 <label for="twitter">Pseudo Twitter</label>
-                <input type="text" name="twitter" id="twitter">
+                <input type="text" name="twitter" id="twitter" value= "<?= $_GET['twitter'] ?? NULL ?>" >
             </div>
 
             <div class="diplomes">
-                <h2 class="titres">Diplômes et formations</h2>
+                <h2 class="titres">Diplômes et formations</h2> 
                 <label for="dip1">Diplôme 1</label>
-                <input type="text" name="dip1" id="dip1">
+                <input type="text" name="dip1" id="dip1"
+                value= "<?= $_GET['dip1'] ?? NULL ?>" >
 
                 <label for="dip2">Diplôme 2</label>
-                <input type="text" name="dip2" id="dip2">
+                <input type="text" name="dip2" id="dip2" value= "<?= $_GET['dip2'] ?? NULL ?>" >
 
                 <label for="dip3">Diplôme 3</label>
-                <input type="text" name="dip3" id="dip3">
+                <input type="text" name="dip3" id="dip3" value= "<?= $_GET['dip3'] ?? NULL ?>" >
             </div>
 
             <div class="skills">
                 <h2 class="titres">Compétences</h2>
                 <label for="skill1">Compétence 1</label>
-                <input type="text" name="skill1" id="skill1">
+                <input type="text" name="skill1" id="skill1" value= "<?= $_GET['skill1'] ?? NULL ?>" >
 
                 <label for="skill2">Compétence 2</label>
-                <input type="text" name="skill2" id="skill2">
+                <input type="text" name="skill2" id="skill2" value= "<?= $_GET['skill2'] ?? NULL ?>" >
 
                 <label for="skill3">Compétence 3</label>
-                <input type="text" name="skill3" id="skill3">
+                <input type="text" name="skill3" id="skill3" value= "<?= $_GET['skill3'] ?? NULL ?>" >
             </div>
 
 

@@ -2,6 +2,12 @@
 // http://localhost/Perso/Profil-Card/card.php?name=Sonia&last_name=Carmon&age=15&ville=Rouen&email=mouou%40mail.fr&linkedin=SoniaCa&twitter=KazuPkt&dip1=Master&dip1=Licence&dip1=Dev&skill1=HTML&skill1=CSS&skill1=PHP&color=&pdp=
 
 $reponse_form=$_GET;
+foreach ($reponse_form as $key => $value) {
+    if(strlen($reponse_form[$key])==0) {
+        $reponse_form[$key]=NULL;
+    }
+    
+}
 var_dump($reponse_form);
 
 // /var/www/html/Perso/Profil-Card/card.php:5:
@@ -48,7 +54,10 @@ var_dump($reponse_form);
             <p><em><?= $reponse_form['email'] ?? NULL ?></em> </p>
             <p>
                 <!-- <a href="https://www.linkedin.com/in/sonia-carmon-027056173/" target = "_blank"><img class="logos" src="./images/linkedin.png" alt="linkedin"></a> -->
-                <a href="https://twitter.com/<?= $reponse_form['twitter'] ?? NULL ?>" target = "_blank"><img class="logos" src="./images/Twitter.svg" alt="twitter"></a>
+                <?php if (isset($reponse_form['twitter'])): ?>
+                    <a href="https://twitter.com/<?= $reponse_form['twitter'] ?? NULL ?>" target = "_blank"><img class="logos" src="./images/Twitter.svg" alt="twitter"></a>
+                <?php endif; ?>
+
             </p>
         </header>
 
@@ -73,29 +82,46 @@ var_dump($reponse_form);
                 
         </main> -->
 
-        <main>  
-            <div class="l1">
-                <h1 class="princ">Diplômes et formations</h1>
-                <h1 class="princ">Compétences</h1>
-            </div>   
-
-            <div class="l2">
-                <em><?= $reponse_form['dip1'] ?? NULL ?></em>
-                <em><?= $reponse_form['skill1'] ?? NULL ?></em>
-            </div>
+        <main> 
             
-            
-            <div class="l3">
-                <em><?= $reponse_form['dip2'] ?? NULL ?></em>
-                <em><?= $reponse_form['skill2'] ?? NULL ?></em>
-            </div>  
+            <div class="listes">
 
+                <div class="l1">
+                    <h1 class="princ">Diplômes et formations</h1>
+                    <h1 class="princ">Compétences</h1>
+                </div>   
 
-            <div class="l4">
-                <em><?= $reponse_form['dip3'] ?? NULL ?></em>
-                <em><?= $reponse_form['skill3'] ?? NULL ?></em>
-            </div>  
+                <div class="l2">
+                    <?php if (isset($reponse_form['dip1'])): ?>
+                        <em><?= $reponse_form['dip1']?></em>
+                    <?php endif; ?>
+
+                    <?php if (isset($reponse_form['skill1'])): ?>
+                        <em><?= $reponse_form['skill1']?></em>
+                    <?php endif; ?>
+                </div>
                 
+                
+                <div class="l3">
+                    <?php if (isset($reponse_form['dip2'])): ?>
+                        <em><?= $reponse_form['dip2']?></em>
+                    <?php endif; ?>
+                    <?php if (isset($reponse_form['skill2'])): ?>
+                            <em><?= $reponse_form['skill2']?></em>
+                    <?php endif; ?>
+                </div>  
+
+
+                <div class="l4">
+                    <?php if (isset($reponse_form['dip3'])): ?>
+                        <em><?= $reponse_form['dip3']?></em>
+                    <?php endif; ?>
+                    <?php if (isset($reponse_form['skill3'])): ?>
+                        <em><?= $reponse_form['skill3']?></em>
+                    <?php endif; ?>
+                </div>  
+
+            </div>  
         </main>
 
 
